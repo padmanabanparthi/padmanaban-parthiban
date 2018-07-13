@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsService } from './skills.service'; // service
+import { AboutmeService } from './aboutme.service'; // service
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
@@ -26,7 +27,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [SkillsService],
+  providers: [SkillsService, AboutmeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

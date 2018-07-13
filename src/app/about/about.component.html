@@ -4,14 +4,7 @@
         <div class="col-md-12 intro">
           <h1>About <span>Me</span></h1>
           <div class="row">
-              <div class="col-md-8">
-                <p><strong>I Am a Php Developer, WordPress Developer, Forentend Developer With More Then 4 Year Experience.</strong></p>              
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                </p>
+              <div class="col-md-8" [innerHTML]="aboutMe">
               </div>
               <div class="col-md-4">
                 <img src="assets/images/padmanaban.jpeg" class="img-thumbnail" width="70%" alt="">
@@ -27,11 +20,11 @@
           <div class="col-md-12"><h2 class="sectionTitle">My Skills</h2></div>
       </div>
       <div class="row skillBarContainer">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="skillbar clearfix " *ngFor="let skill of skills" attr.data-percent="{{skill.percentage}}%">
             <div class="skillbar-title" style="background: #424242;"><span>{{skill.title}}</span></div>
-            <div class="skillbar-bar" style="background: #757575;"></div>
-            <div class="skill-bar-percent">{{skill.percentage}}</div>
+            <div class="skillbar-bar" style="background: #12B23D;"></div>
+            <div class="skill-bar-percent">{{skill.percentage+"%"}}</div>
           </div> <!-- End Skill Bar -->
         </div>
       </div>

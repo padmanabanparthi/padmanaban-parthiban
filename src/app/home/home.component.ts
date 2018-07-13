@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SkillsService} from '../skills.service'; // service for skills
-
+import {AboutmeService} from '../aboutme.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -25,11 +25,13 @@ export class HomeComponent implements OnInit {
     }
   ];
   public skills = [];
+  public aboutMe;
 
-  constructor(private _skills: SkillsService) { }
+  constructor(private _skills: SkillsService, private _aboutme: AboutmeService) { }
 
   ngOnInit() {
     this.skills = this._skills.getSkills();
+    this.aboutMe = this._aboutme.aboutme();
   }
 
 }
