@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import {SkillsService} from '../skills.service';
+declare var jquery:any;
+declare var $ :any;
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -14,6 +16,14 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.skills = this._skills.getSkills();
+
+    jQuery(document).ready(function(){
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },6000);
+      });
+    });
   }
 
 }
