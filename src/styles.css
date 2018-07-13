@@ -2,20 +2,18 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 body{
-    color: rgb(134, 134, 134);
+    color: rgb(163, 163, 163);
     font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 .main {
     margin-top:55px;
-    line-height: 28px;
+    line-height: 26px;
 }
 h1, h2, h3, h4, h5, h6 {
     color: rgb(65, 65, 65);
 }
-h1 span {
-    color:#780CFF;
-}
+
 section{
     padding: 60px 0px;
 }
@@ -23,8 +21,14 @@ section{
     border-radius: 50px;
 }
 .btn-primary{
-    background: #CCA61E;
-    border: 1px solid #CCA61E;
+    background: transparent;
+    border: 3px solid #ffffff;
+    transition: background .60s;
+}
+.btn-primary:hover{
+    color: #780CFF;
+    background: #ffffff;
+    border: 3px solid #ffffff;
 }
 .navbar-brand {
     display: inline-block;
@@ -36,7 +40,7 @@ section{
     white-space: nowrap;
 }
 .navbar-brand span {
-    color: #12B23D;
+    color: #6E23EA;
 }
 .sectionTitle{
     font-size: 32px;
@@ -48,9 +52,9 @@ section{
 .sectionTitle:after{
     content:'';
     position: absolute;
-    left: 45.3%;
+    left: 45.4%;
     bottom: -6px;
-    height: 4px;
+    height:2px;
     width: 100px;
     border-radius: 20px;
     background: #780CFF;
@@ -59,3 +63,22 @@ section{
 .sectionTitle:active:after {
     width: 500px;
   }
+
+.pageTitle{
+    position: relative;
+    margin-bottom: 30px;
+}
+.pageTitle:after{
+    content:'';
+    position: absolute;
+    left: 10px;
+    bottom: -6px;
+    height: 2px;
+    width: 50px;
+    border-radius: 20px;
+    background: #780CFF;
+    transition: width .25s;
+}
+.pageTitle span {
+    color:#780CFF;
+}

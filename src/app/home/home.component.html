@@ -3,18 +3,19 @@
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
-  <section class="container-fluid aboutContainer" style="background:url(assets/images/bg-round.jpg)">
+  <section class="container-fluid aboutContainer" >
+      <!-- style="background:url(assets/images/bg-round.jpg)" -->
     <div class="container ">
       <div class="row">
         <div class="col-md-12 intro">
-          <h1>Hello I'm <span>Padmanaban</span></h1>
+          <h1 class="pageTitle">Hello I'm <span>Padmanaban</span></h1>
           <div class="row">
-              <div class="col-md-8" [innerHTML]="aboutMe">
+              <div class="col-md-6" [innerHTML]="aboutMe">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div class="introImgContainer">
                   <div class="introImg">
-                      <img src="assets/images/me/parthi.png" class="aboutImg" width="220rem" alt="">
+                      <img src="assets/images/me/parthi.png" class="aboutImg" width="90%" alt="">
                   </div>
                 </div>                
               </div>
@@ -30,12 +31,14 @@
           <div class="col-md-12"><h2 class="sectionTitle">What I Do</h2></div>
       </div>
       <div class="row mt-5">        
-        <div class="col-md-4 serviceSection" *ngFor="let service of services">
-            <div class="serviceIcon">
-                <i class="{{service.icon}}"></i>
-            </div>
-            <h2 class="serviceTitle">{{service.title}}</h2>
-            <p class="serviceContent">{{service.content}}</p>
+        <div class="col-md-4" *ngFor="let service of services">
+          <div class="serviceSection">
+              <div class="serviceIcon">
+                  <i class="{{service.icon}}"></i>
+              </div>
+              <h2 class="serviceTitle">{{service.title}}</h2>
+              <p class="serviceContent">{{service.content}}</p>
+          </div>
         </div><!-- /. col-md-4-->     
       </div><!-- /.row -->
     </div>

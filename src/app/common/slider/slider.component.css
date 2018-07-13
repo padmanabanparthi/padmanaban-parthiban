@@ -24,9 +24,11 @@
   .carousel-item.first-slide {
     /* background: #1ECC4D */
     background: #780CFF;
+    /* background: linear-gradient(to bottom right, #780CFF, #1ECC4D); */
   }
   .carousel-item.second-slide {
     background: #780CFF;
+    /* background: linear-gradient(to top right, #1ECC4D, #780CFF); */
   }
   .carousel-item > img {
     position: absolute;
