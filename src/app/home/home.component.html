@@ -50,9 +50,9 @@
           <div class="col-md-12"><h2 class="sectionTitle hide-on-init" animateOnScroll animationName="animated {{pageTitleAnimation}}">My Skills</h2></div>
       </div>
       <div class="row skillBarContainer">
-        <div class="col-md-12">
-          <div class="skillbar clearfix  hide-on-init" animateOnScroll animationName="animated fadeInUp" *ngFor="let skill of skills" attr.data-percent="{{skill.percentage}}%">
-            <div class="skillbar-title" style="background: rgb(68, 68, 68);"><span>{{skill.title}}</span></div>
+        <div class="col-md-6" *ngFor="let skill of skills">
+          <div class="skillbar clearfix  hide-on-init" animateOnScroll animationName="animated fadeInUp"  attr.data-percent="{{skill.percentage}}%">
+            <div class="skillbar-title" style="background: rgb(114, 114, 114);"><span>{{skill.title}}</span></div>
             <div class="skillbar-bar" style="background: #780CFF;"></div>
             <div class="skill-bar-percent">{{skill.percentage+"%"}}</div>
           </div> <!-- End Skill Bar -->
@@ -60,6 +60,7 @@
       </div>
     </div>
   </section>  
+  <app-myworks></app-myworks>
     
 
   

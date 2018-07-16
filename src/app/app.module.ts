@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SliderComponent } from './common/slider/slider.component';
 import { ContactComponent } from './contact/contact.component';
+import { MyworksComponent } from './myworks/myworks.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AboutComponent,
     SliderComponent,
-    ContactComponent
+    ContactComponent,
+    MyworksComponent
   ],
   imports: [
     BrowserModule,
