@@ -17,27 +17,27 @@
 }
 .filter-button
 {
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #780CFF;
+    border-radius: 60px;
     text-align: center;
-    color: #42B32F;
+    color: #780CFF;
+    background-color: transparent;
     margin-bottom: 30px;
 
 }
 .filter-button:hover
 {
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
+    border: 2px solid #780CFF;
+    border-radius: 60px;
     text-align: center;
     color: #ffffff;
-    background-color: #42B32F;
+    background-color: #780CFF;
 
 }
-.btn-default:active .filter-button:active
+.filter-button.active
 {
-    background-color: #42B32F;
+    background-color: #780CFF;
     color: white;
 }
 
@@ -48,5 +48,31 @@
 
 .gallery_product
 {
-    margin-bottom: 30px;
+    position: relative;
+    margin: 0px 0px;
+    border: 1px solid #cccccc;
+    background: #780CFF;
+    color: #ffffff;
+    height: auto;
+}
+.gallery_product .work-info{
+    display: none;
+    position: absolute;
+    padding: 10px 20px;
+    z-index: 1111;
+    bottom:0;
+    font-size: 14px;
+    width: 100%;
+}
+.gallery_product .work-info p{
+    padding: 2px;
+    margin: 2px;
+}
+.gallery_product:hover .work-info{
+    display: inline;
+    background: rgba(0,0,0,0.8);
+    color: #ffffff;
+}
+.filter.col-sm-6{
+    padding: 30px;
 }
