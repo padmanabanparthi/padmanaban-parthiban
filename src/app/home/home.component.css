@@ -5,6 +5,7 @@
 .introImgContainer{
     position: relative;
 }
+
 .introImg{
     position:absolute;
     overflow: hidden;

@@ -7,6 +7,7 @@ import {AboutmeService} from '../aboutme.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  pageTitleAnimation = "fadeInDown";
   public services = [
     {
       icon: 'fas fa-paint-brush',

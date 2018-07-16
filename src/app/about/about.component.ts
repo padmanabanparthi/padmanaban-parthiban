@@ -11,7 +11,7 @@ declare var $ :any;
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
+  pageTitleAnimation = "fadeInDown";
   public skills = [];
   public aboutMe;
 

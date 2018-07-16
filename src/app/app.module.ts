@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// import third-party module
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsService } from './skills.service'; // service
@@ -25,7 +27,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [SkillsService, AboutmeService],
   bootstrap: [AppComponent]
