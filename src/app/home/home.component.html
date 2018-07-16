@@ -15,7 +15,7 @@
               <div class="col-md-6">
                 <div class="introImgContainer">
                   <div class="introImg hide-on-init" animateOnScroll animationName="animated slideInRight">
-                      <img src="assets/images/me/parthi.png" class="aboutImg hang" width="90%" alt="">
+                      <img src="assets/images/me/parthi.png" class="aboutImg hang" width="100%" alt="">
                   </div>
                 </div>                
               </div>
@@ -44,26 +44,22 @@
     </div>
   </section>
 
-  <section class="container-fluid skillsContainer">
-      <div class="container">
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-md-12"><h2 class="sectionTitle hide-on-init" animateOnScroll animationName="animated {{pageTitleAnimation}}">My Skills</h2></div>
-        </div>
-        <div class="row mt-5">        
-          <div class="col-md-3" *ngFor="let skill of skills">
-            <div class="skillSection hide-on-init" animateOnScroll animationName="animated fadeInDown">
-                <div class="skillsIcon">
-                    <img src="assets/images/{{skill.icon}}" alt="" class="hvr-bounce-in">
-                </div> 
-                <!-- <div class="skillsTitle">
-                  {{skill.title}}
-                </div> -->
-            </div>                         
-          </div><!-- /. col-md-4-->     
-        </div><!-- /.row -->
+  <section class="container-fluid">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12"><h2 class="sectionTitle hide-on-init" animateOnScroll animationName="animated {{pageTitleAnimation}}">My Skills</h2></div>
       </div>
-    </section>
+      <div class="row skillBarContainer">
+        <div class="col-md-12">
+          <div class="skillbar clearfix  hide-on-init" animateOnScroll animationName="animated fadeInUp" *ngFor="let skill of skills" attr.data-percent="{{skill.percentage}}%">
+            <div class="skillbar-title" style="background: rgb(68, 68, 68);"><span>{{skill.title}}</span></div>
+            <div class="skillbar-bar" style="background: #780CFF;"></div>
+            <div class="skill-bar-percent">{{skill.percentage+"%"}}</div>
+          </div> <!-- End Skill Bar -->
+        </div>
+      </div>
+    </div>
+  </section>  
     
 
   

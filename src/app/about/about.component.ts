@@ -5,6 +5,7 @@ import {AboutmeService} from '../aboutme.service';
 
 declare var jquery:any;
 declare var $ :any;
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
