@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // import third-party module
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+// import form module
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsService } from './skills.service'; // service
@@ -29,6 +31,7 @@ import { MyworksComponent } from './myworks/myworks.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     AnimateOnScrollModule.forRoot()
   ],

@@ -1,4 +1,6 @@
-
+.myworksContainer{
+    background: rgb(244, 237, 252);
+}
 .gallery-title
 {
     font-size: 36px;
@@ -24,7 +26,7 @@
     color: #780CFF;
     background-color: transparent;
     margin-bottom: 30px;
-
+    margin-right: 10px;
 }
 .filter-button:hover
 {
@@ -64,6 +66,9 @@
     font-size: 14px;
     width: 100%;
 }
+.gallery_product img{
+    width: 100%;
+}
 .gallery_product .work-info p{
     padding: 2px;
     margin: 2px;
@@ -73,6 +78,6 @@
     background: rgba(0,0,0,0.8);
     color: #ffffff;
 }
-.filter.col-sm-6{
-    padding: 30px;
+.filter.col-sm-4{
+    padding: 10px;
 }

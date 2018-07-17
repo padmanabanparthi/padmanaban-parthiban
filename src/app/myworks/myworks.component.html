@@ -1,4 +1,4 @@
-<section class="container-fluid">
+<section class="container-fluid myworksContainer">
   <div class="row" style="margin-bottom:40px;">
     <div class="col-md-12"><h2 class="sectionTitle hide-on-init" animateOnScroll animationName="animated {{pageTitleAnimation}}">Recent Works</h2></div>
   </div>
@@ -11,9 +11,9 @@
   
   <div class="container">
     <div class="row">
-      <div *ngFor="let work of recentWorks" class="filter col-sm-6 {{work.id}} hide-on-init" animateOnScroll animationName="animated fadeInUp">
+      <div *ngFor="let work of recentWorks" class="filter col-sm-4 {{work.id}} hide-on-init" animateOnScroll animationName="animated fadeInUp">
         <div class="gallery_product hvr-shutter-out-vertical" >
-          <img src="{{work.image}}" width="100%" class="hvr-shutter-out-vertical">
+          <img src="{{work.image}}" class="hvr-shutter-out-vertical">
           <div class="work-info animated fadeIn">
               <p>Project Name: {{work.projectName}}</p>
               <p>Technlogy Used: {{work.technologyUsed}}</p>
